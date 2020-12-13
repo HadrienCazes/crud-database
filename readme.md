@@ -8,5 +8,5 @@ docker build -t database .
 ```
 
 ```sh
-docker run database -d
+docker run -p 5432:5432 dabase -e POSTGRES_HOST_AUTH_METHOD=trust -d
 ```
