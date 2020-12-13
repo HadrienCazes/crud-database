@@ -8,5 +8,5 @@ docker build -t database .
 ```
 
 ```sh
-docker run -p 5432:5432 -d -t --restart unless-stopped dabase
+docker run -p 5432:5432 -d -t --restart unless-stopped database
 ```
