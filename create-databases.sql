@@ -1,3 +1,3 @@
-create user books;
-create database books;
-grant all privileges on database books to books;
+create user seafood;
+create database seafood;
+grant all privileges on database seafood to seafood;

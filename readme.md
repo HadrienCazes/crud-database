@@ -1,7 +1,7 @@
-# Books database
+# Crud database
 
 This repo is the base for build a postgres docker image.
-It create a user books for the database books. (You will need it to connect with a server)
+It create a user seafood for the database seafood. (You will need it to connect with a server)
 
 ```sh
 docker build -t database .
