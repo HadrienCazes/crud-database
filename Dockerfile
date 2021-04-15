@@ -1,4 +1,4 @@
-FROM library/postgres:10.15-alpine
+FROM postgres:latest
 
 COPY init-databases.sh /docker-entrypoint-initdb.d/
 COPY create-databases.sql /docker-entrypoint-initdb.d/
@@ -13,4 +13,4 @@ RUN echo "listen_addresses='*'" >> postgresql.conf
 
 EXPOSE 5432
 
-VOLUME  ["/etc/postgresql", "/var/log/postgresql", "/var/lib/postgresql"]
+VOLUME ["/etc/postgresql", "/var/log/postgresql", "/var/lib/postgresql"]
